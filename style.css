@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+.left{
+    width: 25vw;
+    color: white;
+}
+.left-top{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    justify-content: center;
+    height: auto;
+    font-weight: 700;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    box-sizing: border-box;
+}
+.item{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 4px;
+}
+.item a{
+    text-decoration: none;
+    color: rgb(205, 199, 199);
+    padding-left: 5%;
+}
+.item a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.item img{
+    filter: invert(1);
+    height: 30px;
+    width: 30px;
+}
+.left-middle{
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #121212;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.box1{
+    background-color: #121212;
+    font: lighter;
+    border-radius: 5px;
+    max-height: 120px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.library{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.library img{
+    filter: invert(1);
+    height: 40px;
+    width: 40px;
+}
+.box2{
+    padding: 15px;
+    background-color: #242424;
+    margin-bottom: 15px;
+}
+.box2 p{
+    margin: 3px 0px;
+}
+.box2 button{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: white;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: #242424;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 30px;
+    bottom: 0;
+}
+
+.fi a{
+    color: white;
+    text-decoration: none;
+    font-size: x-small;
+    padding: 10px;
+}
+.right{
+    width: 75vw;
+    color: white;
+    margin-left: 10px;
+    background-color: #121212;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.nav{
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.btn ,.symbol{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+} 
+.sign a:hover{
+    font-size: 17px;
+}
+.symbol img{
+    filter: invert(1);
+    cursor: pointer;
+}
+.btn button{
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 150px;
+    cursor: pointer;
+}
+.btn > *{
+    margin: 10px;
+}
+.symbol img{
+    height: 40px;
+    width: 30px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.playlist{
+    background-color: #242424;
+}
+.cards{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+.card{
+    margin-left: 30px;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.card :nth-child(2){
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card :nth-child(3){
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.play{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 10px;
+    /* display: flex; */
+}
+.play img{
+    cursor: pointer;
+    filter: invert(1);
+    padding: 1%;
+}
+.butns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    margin-top: 7px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    height: 5px;
+    background-color: white;
+}
+.circle{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0.5px;
+    height: 15px;
+    background-color: rgb(0, 187, 255);
+    width: 18px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    left: 0%;
+}
+.songs{
+    /* width: 100%; */
+    max-height: 20vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2%;
+}
+.songs :hover{
+    cursor: pointer;
+}
+.st{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    border: 2px solid white;
+    padding: 10px 0px
+}
+.st img{
+    filter: invert(1);
+    height: 30px;
+    width: 25px;
+}
+.playbar{
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playbar img{
+    filter: invert(1);
+}
+.time{
+    position: absolute;
+    right: 10px;
+}
+.CurrSong{
+    position: absolute;
+    left: 10px;
+}
+/* void build(ll i,ll l,ll r)
+{
+  if(l == r)
+  {
+    seg[i] = l;
+    return;
+  }
+  ll mid = (l + r)/2;
+  build(2*i + 1,l,mid);
+  build(2*i + 2,mid + 1,r);
+  ll i1 = seg[2*i+1] , i2 = seg[2*i+2];
+  if(a[i1] >= a[i2])
+  {
+    seg[i] = i2;
+  }
+  else seg[i] = i1;
+  return;
+}
+ll query(ll i,ll low, ll high, ll l,ll r)
+{
+  if(l <= low && r >= high) // Lies Inside
+  return seg[i];
+  // Out Of Bounds
+  if(low > r || high < l) return -1;
+  // OverLap
+  ll mid = (low + high)/2;
+  ll left = query(2*i + 1, low,mid,l,r);
+  ll right = query(2*i + 2,mid + 1,high,l,r);
+  ll leftval = INT_MAX, rightval = INT_MAX;
+  if(left != -1) leftval = a[left];
+  if(right != -1 ) rightval = a[right];
+  if(leftval < rightval) return left;
+  return right;
+} */
